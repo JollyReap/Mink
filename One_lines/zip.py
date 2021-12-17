@@ -10,9 +10,9 @@ new_lst1, new_lst2 = zip(*zipped)
 
 # Теперь представим что надо упоковать мини бд
 column_names = ['name', 'job', 'sallary']
-db_rows = [('Petya', 300000, 'data_sciencest'),
-           ('Bob', 'free', 'frontend_developer'),
-           ('Tad', 40000, 'django_developer')]
+db_rows      = [('Petya', 300000, 'data_sciencest'),
+                ('Bob', 'free', 'frontend_developer'),
+                ('Tad', 40000, 'django_developer')]
 
 # Запихнём в однострочник
 db = [dict(zip(column_names, row)) for row in db_rows]
